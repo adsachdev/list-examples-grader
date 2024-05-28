@@ -1,0 +1,25 @@
+JUnit version 4.13.2
+...E.E
+Time: 0.57
+There were 2 failures:
+1) testMergeRightEnd(TestListExamples)
+org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3513)
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3482)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:237)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:244)
+	at java.base/java.util.ArrayList.add(ArrayList.java:483)
+	at java.base/java.util.ArrayList.add(ArrayList.java:496)
+	at ListExamples.merge(ListExamples.java:42)
+	at TestListExamples.testMergeRightEnd(TestListExamples.java:40)
+2) testFilter(TestListExamples)
+java.lang.AssertionError: expected:<[bye?, hm?, a?]> but was:<[a?, hm?, bye?]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TestListExamples.testFilter(TestListExamples.java:63)
+
+FAILURES!!!
+Tests run: 4,  Failures: 2
+
